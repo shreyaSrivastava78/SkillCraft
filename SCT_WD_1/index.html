@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyHigh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FlyHigh</div>
+            <ul class="nav-links">
+                <li><a href="#">Holiday Packages</a></li>       
+                <li><a href="#">Flight Schedule</a></li>
+                <li><a href="#">Account Settings</a></li> 
+                <li><a href="#">Manage Booking</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hey Buddy! Where are you <span>Flying</span> to?</h1>
+            <button>Explore Now</button>
+        </div>
+    </header>
+    <section class="search-section">
+        <div class="search-box">
+            <div class="tabs">
+                <button class="tab active">Flight</button>
+                <button class="tab">Hotel</button>
+                <button class="tab">Rent a Car</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <input type="text" id="from" placeholder="Enter Departure City">
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="text" id="to" placeholder="Enter Destination City">
+                </div>
+                <div class="form-group">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure">
+                </div>
+                <div class="form-group">
+                    <label for="return">Return</label>
+                    <input type="date" id="return">
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Passengers</label>
+                    <input type="number" id="passengers" min="1" max="10">
+                </div>
+                <button type="submit">Search Flights</button>
+            </form>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

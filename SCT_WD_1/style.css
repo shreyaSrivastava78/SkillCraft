@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('img1.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    color: yellow;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.search-section {
+    background: black;
+    padding: 20px;
+}
+
+.search-box {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #f1f1f1;
+}
+
+.tab {
+    padding: 15px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.tab.active {
+    background: white;
+    border-bottom: 2px solid yellow;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+}
