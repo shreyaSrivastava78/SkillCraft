@@ -1,0 +1,209 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    background-image: url("https://www.hdwallpapers.in/download/colorful_glow_bright_lines_wave_dark_background_abstraction_4k_hd_abstract-2560x1440.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Container Styling */
+.container {
+    padding: 20px 65px;
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 30px;
+    border: 2px solid rgba(96, 96, 96, 0.7);
+    box-shadow: 0 2px 50px 16px rgba(0, 128, 255, 0.8);
+}
+
+/* Outer and Inner Circles */
+.outer-circle, .inner-circle {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-circle {
+    border: 3px solid #5f9fff;
+}
+
+.inner-circle {
+    background-color: #000;
+}
+
+/* Text Styling */
+.text {
+    color: #fff;
+    font-size: 23px;
+}
+
+.min {
+    font-size: 48px;
+}
+
+.sec {
+    font-size: 46px;
+}
+
+.msec {
+    font-size: 42px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 23px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(40, 41, 128, 0.48);
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+/* Specific Button Styles */
+.playbtn {
+    background-color: rgb(0, 87, 173);
+}
+
+.playbtn.on {
+    background-color: #d92027;
+}
+
+.resetbtn, .lapbtn {
+    transform: scale(0.9);
+}
+
+/* Lap List Styling */
+.laps {
+    list-style: none;
+    color: #fff;
+    width: 250px;
+    height: 350px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.lap-item {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #c1eaf1;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.number {
+    color: #cbc8c8;
+}
+
+.time-stamp {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Clear Button Styling */
+.clearbtn {
+    display: block;
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: #10153b;
+    border: 2px solid #0080ff;
+    color: #fff;
+    text-align: center;
+}
+
+.clearbtn:hover {
+    background-color: #0080ff;
+}
+
+/* Visibility and Display */
+.visibility {
+    visibility: hidden;
+}
+
+.laptime {
+    display: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    .container {
+        height: auto;
+    }
+    .laps {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        height: auto;
+    }
+    .laps {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .container {
+        height: auto;
+    }
+    .laps {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 579px) {
+    .container {
+        height: auto;
+    }
+    .laps {
+        height: 240px;
+    }
+}

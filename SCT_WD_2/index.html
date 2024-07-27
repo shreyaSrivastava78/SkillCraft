@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/stopwatch-3701359-3089846.png?f=webp">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="watch">
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <span class="text min">00 :</span>
+                    <span class="text sec">00 :</span>
+                    <span class="text msec">00</span>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="resetbtn btn visibility" aria-label="Reset">Reset</button>
+            <button class="playbtn btn" aria-label="Start">Start</button>
+            <button class="lapbtn btn visibility" aria-label="Lap">Lap</button>
+        </div>
+        <ul class="laps">
+            <!-- List items for laps will be added dynamically here -->
+        </ul>
+        <button class="clearbtn laptime" aria-label="Clear">Clear</button>
+    </div>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
+
